@@ -1,0 +1,15 @@
+---
+name: setup-aws-cli
+description: Setup AWS CLI v2 for use on Private Runners
+author: isometry
+inputs:
+  version:
+    description: Version of AWS CLI v2 to install
+    required: false
+    default: latest
+outputs:
+  version:
+    description: Version of AWS CLI v2 installed
+runs:
+  using: node20
+  main: dist/index.js
